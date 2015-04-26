@@ -37,8 +37,8 @@ class MovieQuoteDetailViewController: UIViewController {
         }
         let editQuoteAction = UIAlertAction(title: "Edit Quote", style: .Default) {
             (_) -> Void in
-            let quoteTextField = alertController.textFields![0] as UITextField
-            let movieTextField = alertController.textFields![1] as UITextField
+            let quoteTextField = alertController.textFields![0] as! UITextField
+            let movieTextField = alertController.textFields![1] as! UITextField
             self.movieQuote?.quote = quoteTextField.text
             self.movieQuote?.movie = movieTextField.text
             self.quoteLabel.text = self.movieQuote?.quote

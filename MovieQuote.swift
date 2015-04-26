@@ -1,18 +1,18 @@
 //
 //  MovieQuote.swift
-//  MovieQuotesCoreData
+//  MovieQuotesFirebase
 //
-//  Created by CSSE Department on 3/23/15.
+//  Created by CSSE Department on 4/26/15.
 //  Copyright (c) 2015 CSSE Department. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class MovieQuote: NSObject {
-    var quote : String
+class MovieQuote {
     var movie : String
+    var quote : String
     
-    init(quote : String, movie : String) {
+    init(quote: String, movie: String) {
         self.quote = quote
         self.movie = movie
     }
