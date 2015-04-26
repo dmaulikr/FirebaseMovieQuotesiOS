@@ -8,17 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0AB2E7021AC222CE00010042 /* MovieQuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2E7011AC222CE00010042 /* MovieQuoteDetailViewController.swift */; };
-		0ABC0DE21AED3F45008D5899 /* MovieQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABC0DE11AED3F45008D5899 /* MovieQuote.swift */; };
 		0AE764681ABF5D9B0062ED7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE764671ABF5D9B0062ED7F /* AppDelegate.swift */; };
 		0AE764721ABF5D9B0062ED7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE764701ABF5D9B0062ED7F /* Main.storyboard */; };
 		0AE764741ABF5D9B0062ED7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE764731ABF5D9B0062ED7F /* Images.xcassets */; };
 		0AE764771ABF5D9B0062ED7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE764751ABF5D9B0062ED7F /* LaunchScreen.xib */; };
 		0AE9B3851AC0CF3C00CC636D /* MovieQuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9B3841AC0CF3C00CC636D /* MovieQuotesTableViewController.swift */; };
+		0AFEA3A11AED442C006CD9F3 /* MovieQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFEA3A01AED442C006CD9F3 /* MovieQuote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0AB2E7011AC222CE00010042 /* MovieQuoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieQuoteDetailViewController.swift; sourceTree = "<group>"; };
-		0ABC0DE11AED3F45008D5899 /* MovieQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieQuote.swift; path = ../MovieQuote.swift; sourceTree = "<group>"; };
 		0AE764621ABF5D9B0062ED7F /* MovieQuotesFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieQuotesFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE764661ABF5D9B0062ED7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AE764671ABF5D9B0062ED7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +25,7 @@
 		0AE764731ABF5D9B0062ED7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0AE764761ABF5D9B0062ED7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0AE9B3841AC0CF3C00CC636D /* MovieQuotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieQuotesTableViewController.swift; sourceTree = "<group>"; };
+		0AFEA3A01AED442C006CD9F3 /* MovieQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieQuote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				0AE764751ABF5D9B0062ED7F /* LaunchScreen.xib */,
 				0AE764651ABF5D9B0062ED7F /* Supporting Files */,
 				0AE9B3841AC0CF3C00CC636D /* MovieQuotesTableViewController.swift */,
-				0ABC0DE11AED3F45008D5899 /* MovieQuote.swift */,
+				0AFEA3A01AED442C006CD9F3 /* MovieQuote.swift */,
 				0AB2E7011AC222CE00010042 /* MovieQuoteDetailViewController.swift */,
 			);
 			name = MovieQuotesFirebase;
@@ -150,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB2E7021AC222CE00010042 /* MovieQuoteDetailViewController.swift in Sources */,
-				0ABC0DE21AED3F45008D5899 /* MovieQuote.swift in Sources */,
+				0AFEA3A11AED442C006CD9F3 /* MovieQuote.swift in Sources */,
 				0AE9B3851AC0CF3C00CC636D /* MovieQuotesTableViewController.swift in Sources */,
 				0AE764681ABF5D9B0062ED7F /* AppDelegate.swift in Sources */,
 			);
