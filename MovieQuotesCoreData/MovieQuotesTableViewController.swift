@@ -40,8 +40,8 @@ class MovieQuotesTableViewController: UITableViewController {
         }
         let createQuoteAction = UIAlertAction(title: "Create Quote", style: .Default) {
             (_) -> Void in
-            let quoteTextField = alertController.textFields![0] as UITextField
-            let movieTextField = alertController.textFields![1] as UITextField
+            let quoteTextField = alertController.textFields![0] as! UITextField
+            let movieTextField = alertController.textFields![1] as! UITextField
             self.movieQuotes.insert(MovieQuote(quote: quoteTextField.text, movie: movieTextField.text), atIndex: 0)
             if self.movieQuotes.count == 1 {
                 self.tableView.reloadData()
@@ -68,9 +68,9 @@ class MovieQuotesTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell : UITableViewCell
         if movieQuotes.count == 0 {
-            cell = tableView.dequeueReusableCellWithIdentifier(NoMovieQuoteCellIdentifier, forIndexPath: indexPath) as UITableViewCell
+            cell = tableView.dequeueReusableCellWithIdentifier(NoMovieQuoteCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
         } else {
-            cell = tableView.dequeueReusableCellWithIdentifier(MovieQuotesCellIdentifier, forIndexPath: indexPath) as UITableViewCell
+            cell = tableView.dequeueReusableCellWithIdentifier(MovieQuotesCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
             let movieQuote = movieQuotes[indexPath.row]
             cell.textLabel?.text = movieQuote.quote
             cell.detailTextLabel?.text = movieQuote.movie
@@ -105,7 +105,7 @@ class MovieQuotesTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == ShowDetailSegueIdentifier {
-            let detailController = segue.destinationViewController as MovieQuoteDetailViewController
+            let detailController = segue.destinationViewController as! MovieQuoteDetailViewController
             let index = tableView.indexPathForSelectedRow()!.row
             detailController.movieQuote = movieQuotes[index]
         }

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MovieQuotesCoreData.xcodeproj">
+      location = "self:MovieQuotesFirebase.xcodeproj">
    </FileRef>
 </Workspace>

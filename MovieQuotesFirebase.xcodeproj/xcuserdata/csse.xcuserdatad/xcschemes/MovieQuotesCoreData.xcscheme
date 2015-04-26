@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0AE764611ABF5D9B0062ED7F"
-               BuildableName = "MovieQuotesCoreData.app"
-               BlueprintName = "MovieQuotesCoreData"
-               ReferencedContainer = "container:MovieQuotesCoreData.xcodeproj">
+               BuildableName = "MovieQuotesFirebase.app"
+               BlueprintName = "MovieQuotesFirebase"
+               ReferencedContainer = "container:MovieQuotesFirebase.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0AE7647B1ABF5D9B0062ED7F"
-               BuildableName = "MovieQuotesCoreDataTests.xctest"
-               BlueprintName = "MovieQuotesCoreDataTests"
-               ReferencedContainer = "container:MovieQuotesCoreData.xcodeproj">
+               BuildableName = "MovieQuotesFirebaseTests.xctest"
+               BlueprintName = "MovieQuotesFirebaseTests"
+               ReferencedContainer = "container:MovieQuotesFirebase.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0AE7647B1ABF5D9B0062ED7F"
-               BuildableName = "MovieQuotesCoreDataTests.xctest"
-               BlueprintName = "MovieQuotesCoreDataTests"
-               ReferencedContainer = "container:MovieQuotesCoreData.xcodeproj">
+               BuildableName = "MovieQuotesFirebaseTests.xctest"
+               BlueprintName = "MovieQuotesFirebaseTests"
+               ReferencedContainer = "container:MovieQuotesFirebase.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0AE764611ABF5D9B0062ED7F"
-            BuildableName = "MovieQuotesCoreData.app"
-            BlueprintName = "MovieQuotesCoreData"
-            ReferencedContainer = "container:MovieQuotesCoreData.xcodeproj">
+            BuildableName = "MovieQuotesFirebase.app"
+            BlueprintName = "MovieQuotesFirebase"
+            ReferencedContainer = "container:MovieQuotesFirebase.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0AE764611ABF5D9B0062ED7F"
-            BuildableName = "MovieQuotesCoreData.app"
-            BlueprintName = "MovieQuotesCoreData"
-            ReferencedContainer = "container:MovieQuotesCoreData.xcodeproj">
+            BuildableName = "MovieQuotesFirebase.app"
+            BlueprintName = "MovieQuotesFirebase"
+            ReferencedContainer = "container:MovieQuotesFirebase.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0AE764611ABF5D9B0062ED7F"
-            BuildableName = "MovieQuotesCoreData.app"
-            BlueprintName = "MovieQuotesCoreData"
-            ReferencedContainer = "container:MovieQuotesCoreData.xcodeproj">
+            BuildableName = "MovieQuotesFirebase.app"
+            BlueprintName = "MovieQuotesFirebase"
+            ReferencedContainer = "container:MovieQuotesFirebase.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
