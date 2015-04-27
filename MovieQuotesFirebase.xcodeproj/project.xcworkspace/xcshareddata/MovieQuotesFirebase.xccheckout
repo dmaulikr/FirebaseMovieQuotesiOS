@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1D292D12-0115-4874-9709-D6A1C86D5C16</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>MovieQuotesFirebase</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>953CB153619F53E15DA25F15F9F40B06E2BF3482</key>
 		<string>https://github.com/rockwotj/FirebaseMovieQuotesiOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MovieQuotesFirebase.xcodeproj/project.xcworkspace</string>
+	<string>MovieQuotesFirebase.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>953CB153619F53E15DA25F15F9F40B06E2BF3482</key>

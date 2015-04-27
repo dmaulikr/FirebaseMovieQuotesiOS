@@ -20,8 +20,14 @@ class MovieQuotesTableViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "showAddQuoteDialog")
         navigationItem.leftBarButtonItem = self.editButtonItem()
-        movieQuotes.append(MovieQuote(quote: "I'll be back!", movie: "Terminator"))
-        movieQuotes.append(MovieQuote(quote: "Yo, Adrian!", movie: "Rocky"))
+        // TODO: Create a reference to a Firebase location
+        
+        // TODO: Listen for added data in Firebase
+        
+        // TODO: Listen for changed data in Firebase
+        
+        // TODO: Listen for removed data in Firebase
+        
     }
     
     func showAddQuoteDialog() {
@@ -42,12 +48,7 @@ class MovieQuotesTableViewController: UITableViewController {
             (_) -> Void in
             let quoteTextField = alertController.textFields![0] as! UITextField
             let movieTextField = alertController.textFields![1] as! UITextField
-            self.movieQuotes.insert(MovieQuote(quote: quoteTextField.text, movie: movieTextField.text), atIndex: 0)
-            if self.movieQuotes.count == 1 {
-                self.tableView.reloadData()
-            } else {
-                self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0)], withRowAnimation: .Automatic)
-            }
+            //TODO: Push quote to Firebase
             
         }
         alertController.addAction(cancelAction)
@@ -89,13 +90,7 @@ class MovieQuotesTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            movieQuotes.removeAtIndex(indexPath.row)
-            if movieQuotes.count > 0 {
-                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            } else {
-                tableView.reloadData()
-                self.setEditing(false, animated: true)
-            }
+            //TODO: Delete data from Firebase
             
         }
     }
@@ -108,6 +103,8 @@ class MovieQuotesTableViewController: UITableViewController {
             let detailController = segue.destinationViewController as! MovieQuoteDetailViewController
             let index = tableView.indexPathForSelectedRow()!.row
             detailController.movieQuote = movieQuotes[index]
+            //TODO: Give detailController a reference to the quote it is getting
+            
         }
     }
 
