@@ -9,10 +9,12 @@
 import Foundation
 
 class MovieQuote {
+    let key : String
     var movie : String
     var quote : String
     
-    init(quote: String, movie: String) {
+    init(key: String, quote: String, movie: String) {
+        self.key = key
         self.quote = quote
         self.movie = movie
     }

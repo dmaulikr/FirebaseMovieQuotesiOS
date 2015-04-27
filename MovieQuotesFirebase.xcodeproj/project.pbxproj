@@ -14,6 +14,7 @@
 		0AE764771ABF5D9B0062ED7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE764751ABF5D9B0062ED7F /* LaunchScreen.xib */; };
 		0AE9B3851AC0CF3C00CC636D /* MovieQuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9B3841AC0CF3C00CC636D /* MovieQuotesTableViewController.swift */; };
 		0AFEA3A11AED442C006CD9F3 /* MovieQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFEA3A01AED442C006CD9F3 /* MovieQuote.swift */; };
+		1505223828C6F2BDE05E47CF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA5EEA1A9CA39C92F827878 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,10 @@
 		0AE764761ABF5D9B0062ED7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0AE9B3841AC0CF3C00CC636D /* MovieQuotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieQuotesTableViewController.swift; sourceTree = "<group>"; };
 		0AFEA3A01AED442C006CD9F3 /* MovieQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieQuote.swift; sourceTree = "<group>"; };
+		0AFEA3A21AED45E5006CD9F3 /* MovieQuotesFirebase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieQuotesFirebase-Bridging-Header.h"; sourceTree = "<group>"; };
+		5688A167B93DCCBBC9E68FC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7D8E615707B6CEB80E3CDA28 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9DA5EEA1A9CA39C92F827878 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1505223828C6F2BDE05E47CF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 			children = (
 				0AE764641ABF5D9B0062ED7F /* MovieQuotesFirebase */,
 				0AE764631ABF5D9B0062ED7F /* Products */,
+				9E939D3F4331C9A79E260716 /* Pods */,
+				6FDA1E1447EF2CB2707F7AB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +74,7 @@
 				0AE9B3841AC0CF3C00CC636D /* MovieQuotesTableViewController.swift */,
 				0AFEA3A01AED442C006CD9F3 /* MovieQuote.swift */,
 				0AB2E7011AC222CE00010042 /* MovieQuoteDetailViewController.swift */,
+				0AFEA3A21AED45E5006CD9F3 /* MovieQuotesFirebase-Bridging-Header.h */,
 			);
 			name = MovieQuotesFirebase;
 			path = MovieQuotesCoreData;
@@ -79,6 +88,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6FDA1E1447EF2CB2707F7AB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5EEA1A9CA39C92F827878 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E939D3F4331C9A79E260716 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D8E615707B6CEB80E3CDA28 /* Pods.debug.xcconfig */,
+				5688A167B93DCCBBC9E68FC2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AE764861ABF5D9B0062ED7F /* Build configuration list for PBXNativeTarget "MovieQuotesFirebase" */;
 			buildPhases = (
+				FD824F0B426864BFDED7E02F /* Check Pods Manifest.lock */,
 				0AE7645E1ABF5D9B0062ED7F /* Sources */,
 				0AE7645F1ABF5D9B0062ED7F /* Frameworks */,
 				0AE764601ABF5D9B0062ED7F /* Resources */,
+				4B44C4AE772E2BFAE2E9B18A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +171,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B44C4AE772E2BFAE2E9B18A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD824F0B426864BFDED7E02F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AE7645E1ABF5D9B0062ED7F /* Sources */ = {
@@ -257,21 +318,28 @@
 		};
 		0AE764871ABF5D9B0062ED7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D8E615707B6CEB80E3CDA28 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MovieQuotesCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = MovieQuotesFirebase;
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieQuotesCoreData/MovieQuotesFirebase-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0AE764881ABF5D9B0062ED7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5688A167B93DCCBBC9E68FC2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MovieQuotesCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = MovieQuotesFirebase;
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieQuotesCoreData/MovieQuotesFirebase-Bridging-Header.h";
 			};
 			name = Release;
 		};
